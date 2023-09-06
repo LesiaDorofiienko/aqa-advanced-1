@@ -1,7 +1,7 @@
-const averageGrade = (Math.random() * 100).toFixed();
+const averageGrade = Number((Math.random() * 100).toFixed());
 const message = `Average grade: ${averageGrade} - `
 
-if (averageGrade <= 60) {
+if (averageGrade < 60) {
     console.log (message, "unsatisfactory");
     
 } else if (averageGrade >= 60 && averageGrade <= 70) {

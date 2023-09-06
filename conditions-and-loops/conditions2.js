@@ -1,8 +1,8 @@
-const averageGrade = (Math.random() * 100).toFixed();
+const averageGrade = Number((Math.random() * 100).toFixed());
 const message = `Average grade: ${averageGrade} - `
 
 switch(true) {
-    case (averageGrade <= 60):
+    case (averageGrade < 60):
         console.log (message, "unsatisfactory");
         break;
 
@@ -26,4 +26,3 @@ switch(true) {
         console.log (message, "invalid value")
         break;
     }
-
