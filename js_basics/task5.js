@@ -6,7 +6,7 @@ const width = 12;
 const height = 10;
 const prSquare = Math.PI * (radius ** 2)
 
-const circleArea = (prSquare).toFixed(2);
+const circleArea = prSquare.toFixed(2);
 const rectangleArea = length * width;
 const cylinderVolume = (prSquare * height).toFixed(2);
 
