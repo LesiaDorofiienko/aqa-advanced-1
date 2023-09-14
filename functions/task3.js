@@ -1,11 +1,12 @@
-const recursiveFunction = (num) => {
+// recursiveFunction
+const countDown = (num) => {
   console.log(num);
 
   if (num <= 0) {
     return;
   }
 
-  recursiveFunction(num - 1);
+  countDown(num - 1);
 };
 
-recursiveFunction(5);
+countDown(5);
