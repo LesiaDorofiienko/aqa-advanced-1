@@ -12,20 +12,20 @@ function divide(numerator, denominator) {
 
     return result;
   } catch (error) {
-    console.error(error);
+    console.error("Error: ", error.message);
   } finally {
     console.log("The work is complete");
   }
 }
 
 console.log("==============================================");
-console.log(divide(10, 2));
+console.log("Result: ", divide(10, 2));
 console.log("==============================================");
-console.log(divide(4, 0));
+console.log("Result: ", divide(4, 0));
 console.log("==============================================");
-console.log(divide("a,b,c", 4));
+console.log("Result: ", divide("a,b,c", 4));
 console.log("==============================================");
-console.log(divide(3, "4"));
+console.log("Result: ", divide(3, "4"));
 console.log("==============================================");
-console.log(divide());
+console.log("Result: ", divide());
 console.log("==============================================");
