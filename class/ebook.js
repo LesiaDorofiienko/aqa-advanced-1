@@ -27,6 +27,3 @@ export class EBook extends Book {
     return new EBook(book.title, book.author, book.year, fileFormat);
   }
 }
-
-const ebook = new EBook("Kobzar", "Schevchenko", 1853, "PDF");
-// ebook.printInfo();
