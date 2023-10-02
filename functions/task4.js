@@ -1,21 +1,21 @@
 function divide(numerator, denominator) {
-  try {
-    if (typeof numerator !== "number" || typeof denominator !== "number") {
-      throw new Error("both arguments must be numbers");
+    try {
+        if (typeof numerator !== "number" || typeof denominator !== "number") {
+            throw new Error("both arguments must be numbers");
+        }
+
+        if (denominator === 0) {
+            throw new Error("dividing by zero is not possible");
+        }
+
+        const result = numerator / denominator;
+
+        return result;
+    } catch (error) {
+        console.error("Error: ", error.message);
+    } finally {
+        console.log("The work is complete");
     }
-
-    if (denominator === 0) {
-      throw new Error("dividing by zero is not possible");
-    }
-
-    const result = numerator / denominator;
-
-    return result;
-  } catch (error) {
-    console.error("Error: ", error.message);
-  } finally {
-    console.log("The work is complete");
-  }
 }
 
 console.log("==============================================");
