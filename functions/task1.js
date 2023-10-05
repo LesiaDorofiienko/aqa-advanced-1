@@ -2,21 +2,21 @@ const width = 5;
 const height = 10;
 
 function getRectangleAreaFD(width, height) {
-  const rectangleArea = width * height;
+    const rectangleArea = width * height;
 
-  return rectangleArea;
+    return rectangleArea;
 }
 
 const getRectangleAreaFE = function (width, height) {
-  const rectangleArea = width * height;
+    const rectangleArea = width * height;
 
-  return rectangleArea;
+    return rectangleArea;
 };
 
 const getRectangleAreaAF = (width, height) => {
-  const rectangleArea = width * height;
+    const rectangleArea = width * height;
 
-  return rectangleArea;
+    return rectangleArea;
 };
 
 console.log("RectangleAreaFD", getRectangleAreaFD(width, height));

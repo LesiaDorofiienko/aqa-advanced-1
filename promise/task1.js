@@ -1,18 +1,18 @@
 function delayText(text, milliseconds) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(text);
-    }, milliseconds);
-  });
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(text);
+        }, milliseconds);
+    });
 }
 
 async function longText(text, ms) {
-  try {
-    const result = await delayText(text, ms);
-    console.log(result);
-  } catch (error) {
-    console.error(error);
-  }
+    try {
+        const result = await delayText(text, ms);
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 longText("Very long text", 5000);
